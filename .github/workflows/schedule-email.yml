@@ -1,6 +1,10 @@
 name: schedule-email
 on: 
-  # 支持远程调用
+  # api 调用
+  repository_dispatch:
+    types:
+      - test
+  # 按钮调用
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
