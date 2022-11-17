@@ -1,5 +1,5 @@
 Projects:
-  ☐ Anything with a colon at the end of the line is a project
+  ☐ Anything with a colon at the end of the line is a project @started(22-11-17 16:07)
   ☐ Projects will show some statistics next to them @1h
     ✔ By default those statistics are the number of pending todos and the sum of their time estimates @30m
   Nested:
