@@ -1,11 +1,19 @@
 name: schedule-email
 on: 
+  # api 调用
+  repository_dispatch:
+    types:
+      - test
+  # 按钮调用
+  workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 1 * * *' # Change this to your time
+    # Change this to your time
+    - cron:  '0 1 * * *' 
   push:
     branches:
-      - master # Change this to your default branch
+      # Change this to your default branch
+      - master 
 jobs:
   make-html-send-email:
     name: make-html-send-email
